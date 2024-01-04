@@ -6,3 +6,4 @@ import requestHandler from "../handlers/request.handler.js";
 import userModel from "../models/user.model.js";
 import tokenMiddleware from "../middlewares/token.middleware.js";
 
+const router = express.Router();
