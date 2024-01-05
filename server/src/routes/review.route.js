@@ -31,3 +31,11 @@ router.post(
     requestHandler.validate,
     reviewController.create
 );
+
+router.delete(
+    '/:reviewId',
+    tokenMiddleware.auth,
+    reviewController.remove
+)
+
+export default router;
