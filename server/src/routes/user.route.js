@@ -65,3 +65,10 @@ router.put(
   requestHandler.validate,
   userController.updatePassword
 );
+
+router.get(
+  "/info",
+  tokenMiddleware.auth,
+  userController.getInfo
+);
+
