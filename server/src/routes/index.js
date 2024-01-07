@@ -9,3 +9,7 @@ const router = express.Router();
 router.use("/user", userRoute);
 router.use("/media", mediaRoute);
 router.use("/person", personRoute);
+router.use("/review", reviewRoute);
+
+
+export default router;
