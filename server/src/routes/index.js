@@ -7,3 +7,4 @@ import reviewRoute from "./review.route.js";
 const router = express.Router();
 
 router.use("/user", userRoute);
+router.use("/media", mediaRoute);
