@@ -8,3 +8,4 @@ const router = express.Router();
 
 router.use("/user", userRoute);
 router.use("/media", mediaRoute);
+router.use("/person", personRoute);
