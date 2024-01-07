@@ -5,3 +5,5 @@ import personRoute from "./person.route.js";
 import reviewRoute from "./review.route.js";
 
 const router = express.Router();
+
+router.use("/user", userRoute);
