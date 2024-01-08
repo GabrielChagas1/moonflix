@@ -46,3 +46,7 @@ userSchema.methods.validPassword = function(password) {
 
     return this.password === hash;
 }
+
+const userModel = mongoose.model("User", userSchema)
+
+export default userModel
