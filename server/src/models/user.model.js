@@ -23,3 +23,15 @@ const userSchema = new mongoose.Schema({
         select: false
     }
 }, modelOptions)
+
+userSchema.methods.setPassword = function(password) {
+    this.salt = crypto.randomBytes(16).toString('hex')
+    this.password = crypto.pbkdf2Sync(
+        password,
+        this.salt,
+        1000,
+        64,
+        "sha512"
+    ).toString('hex')
+}
+
