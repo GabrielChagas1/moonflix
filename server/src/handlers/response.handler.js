@@ -5,3 +5,8 @@ const error = (res) => responseWithData(res, 500, {
     message: "Oops! Something wrong!"
 })
 
+const badrequest = (res, message) => responseWithData(res, 400, {
+    status: 400,
+    message
+})
+
