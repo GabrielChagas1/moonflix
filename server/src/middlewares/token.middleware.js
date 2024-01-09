@@ -32,3 +32,5 @@ const auth = async (req, res, next) => {
     req.user = user
     next()
 }
+
+export default { auth, tokenDecode}
