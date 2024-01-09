@@ -10,3 +10,4 @@ const badrequest = (res, message) => responseWithData(res, 400, {
     message
 })
 
+const ok = (req, data) => responseWithData(res, 200, data)
