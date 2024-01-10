@@ -19,3 +19,9 @@ const unauthorize = (res) => responseWithData(res, 401, {
     message: "Unauthorized!"
 })
 
+const notfound = (res) => responseWithData(res, 401, {
+    status: 404,
+    message: "Resource not found!"
+})
+
+
