@@ -25,3 +25,11 @@ const notfound = (res) => responseWithData(res, 401, {
 })
 
 
+export default {
+    error, 
+    badrequest,
+    ok,
+    created,
+    unauthorize,
+    notfound
+}
