@@ -98,3 +98,9 @@ const getInfo = async (req, res) => {
     }
 }
 
+export default {
+    signup, 
+    signin,
+    getInfo,
+    updatePassword
+}
