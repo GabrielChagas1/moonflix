@@ -25,3 +25,5 @@ const personMedias = async (req, res) => {
         responseHandler.error(res)
     }
 }
+
+export default { personDetail, personMedias }
