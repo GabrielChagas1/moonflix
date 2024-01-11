@@ -54,3 +54,5 @@ const getReviewOfUser = async (req, res) => {
         responseHandler.error(res)
     }
 }
+
+export default { create, remove, getReviewOfUser}
