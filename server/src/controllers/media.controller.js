@@ -79,3 +79,5 @@ const getDetail = async (req, res) => {
         responseHandler.error(res);
     }
 }
+
+export default { getList, getGenres, search, getDetail }
