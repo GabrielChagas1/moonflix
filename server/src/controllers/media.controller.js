@@ -29,3 +29,20 @@ const getGenres = async (req, res) => {
     }
 }
 
+const search = async (req, res) => {
+    try {
+        const { mediaType } = req.params;
+        const { query, page } = req.query;
+
+        const response = await tmdbApi.mediaSearch({
+            query,
+            page,
+            mediaType: mediaType === "people" ? "person" : mediaType
+        })
+        responseHandler.ok(res, response)
+
+    } catch {
+        responseHandler.error(res);
+    }
+}
+
