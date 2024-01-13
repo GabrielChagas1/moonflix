@@ -54,3 +54,4 @@ const getFavoritesOfUser = async (req, res) => {
     }
 }
 
+export default { addFavorite, removeFavorite, getFavoritesOfUser }
