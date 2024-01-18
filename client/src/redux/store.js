@@ -14,3 +14,5 @@ const store = configureStore({
     appState: appStateSlice
   }
 });
+
+export default store;
