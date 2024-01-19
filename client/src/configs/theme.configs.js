@@ -46,3 +46,5 @@ const themeConfigs = {
     });
   }
 };
+
+export default themeConfigs;
